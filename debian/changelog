@@ -1,0 +1,79 @@
+golang-github-disintegration-imaging (1.6.2-1) unstable; urgency=medium
+
+  [ Debian Janitor (Jelmer Vernooĳ) ]
+  * Bump debhelper from old 11 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit.
+  * Update standards version to 4.4.1, no changes needed.
+
+  [ Anthony Fok ]
+  * New upstream version 1.6.2
+    - Fix golden tests on arm64, ppc64le, s390x (from version 1.6.1),
+      fixes FTBFS related to "fused multiply and add" (FMA) (Closes: #976565)
+  * debian/control:
+    - Apply "cme fix dpkg" fixes:
+      + Organize debian/control fields
+      + Bump Standards-Version to 4.5.1 (no change)
+    - Change Section from devel to golang
+    - Bump debhelper dependency to "Build-Depends: debhelper-compat (= 13)"
+    - Add "Rules-Requires-Root: no"
+  * debian/copyright:
+    - Remove unused Files-Excluded field
+    - Revert copyright date to 2012 as per upstream
+  * debian/gbp.conf: Set debian-branch to debian/sid for DEP-14 conformance
+
+ -- Anthony Fok <foka@debian.org>  Mon, 04 Jan 2021 13:56:10 -0700
+
+golang-github-disintegration-imaging (1.6.0+really1.6.0-1) unstable; urgency=medium
+
+  * Revert to upstream version 1.6.0 now that Debian 10 "buster" is released.
+    See https://bugs.debian.org/928227 for background information.
+  * Bump Standards-Version to 4.4.0 (no change)
+
+ -- Anthony Fok <foka@debian.org>  Wed, 10 Jul 2019 15:33:22 -0600
+
+golang-github-disintegration-imaging (1.6.0+really1.5.0-1) unstable; urgency=medium
+
+  * Team upload.
+  * Revert all changes between 1.5.0-1 and 1.6.0-1.
+    See https://bugs.debian.org/928227 for a rationale.
+
+ -- Dr. Tobias Quathamer <toddy@debian.org>  Mon, 03 Jun 2019 17:27:43 +0200
+
+golang-github-disintegration-imaging (1.6.0-1) unstable; urgency=medium
+
+  * New upstream version 1.6.0
+  * Bump Standards-Version to 4.3.0 (no change)
+
+ -- Anthony Fok <foka@debian.org>  Sun, 14 Apr 2019 03:57:23 -0600
+
+golang-github-disintegration-imaging (1.5.0-1) unstable; urgency=medium
+
+  * New upstream version 1.5.0
+  * Bump Standards-Version to 4.2.1 (no change)
+
+ -- Anthony Fok <foka@debian.org>  Wed, 19 Dec 2018 17:19:10 -0700
+
+golang-github-disintegration-imaging (1.4.2-1) unstable; urgency=medium
+
+  * New upstream release 1.4.2
+
+ -- Anthony Fok <foka@debian.org>  Mon, 14 May 2018 00:34:02 -0600
+
+golang-github-disintegration-imaging (1.4.1-1) unstable; urgency=medium
+
+  [ Alexandre Viau ]
+  * Point Vcs-* urls to salsa.debian.org.
+
+  [ Anthony Fok ]
+  * New upstream release 1.4.1
+  * Use debhelper (>= 11)
+  * Bump Standards-Version to 4.1.4 (no change)
+
+ -- Anthony Fok <foka@debian.org>  Mon, 16 Apr 2018 09:30:50 -0600
+
+golang-github-disintegration-imaging (1.3.0-1) unstable; urgency=medium
+
+  * Initial release (Closes: #889520)
+
+ -- Anthony Fok <foka@debian.org>  Sat, 03 Feb 2018 23:37:49 -0700
